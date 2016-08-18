@@ -1,9 +1,13 @@
-{
-	"driulis-gonzalez": {
+"use strict";
+
+module.exports = [
+	{
+		"id": "driulis-gonzalez",
 		"name": "Driulis González",
 		"country": "CUB",
 		"birthday": "1973-09-21",
 		"image": "driulis-gonzalez.jpg",
+		"link": "https://en.wikipedia.org/wiki/Driulis_González",
 		"medals": [
 			{"year":"1992", "type": "B", "city": "Barcelona", "event": "Olympic Games", "category":"-57kg"},
 			{"year":"1993", "type": "B", "city": "Hamilton", "event": "World Championships", "category":"-57kg"},
@@ -23,11 +27,13 @@
 			{"year":"2007", "type": "G", "city": "Rio de Janeiro", "event": "World Championships", "category":"-63kg"}
 	  ]
 	},
-	"mark-huizinga": {
+	{
+		"id": "mark-huizinga",
 		"name": "Mark Huizinga",
 		"country": "NED",
 		"birthday": "1973-09-10",
 		"image": "mark-huizinga.jpg",
+		"link": "https://en.wikipedia.org/wiki/Mark_Huizinga",
 		"medals": [
 			{"year":"1994", "type": "B", "city": "Gdansk", "event": "European Championships", "category":"-78kg"},
 			{"year":"1996", "type": "B", "city": "Atlanta", "event": "Olympic Games", "category":"-86kg"},
@@ -47,11 +53,13 @@
 			{"year":"2008", "type": "G", "city": "Lisbon", "event": "European Championships", "category":"-90kg"}
 	  ]
 	},
-	"rishod-sobirov": {
+	{
+		"id": "rishod-sobirov",
 		"name": "Rishod Sobirov",
 		"country": "UZB",
 		"birthday": "1986-09-11",
 		"image": "rishod-sobirov.jpg",
+		"link": "https://en.wikipedia.org/wiki/Rishod_Sobirov",
 		"medals": [
 			{"year":"2007", "type": "S", "city": "Kuwait City", "event": "Asian Championships", "category":"-60kg"},
 			{"year":"2008", "type": "B", "city": "Beijing", "event": "Olympic Games", "category":"-60kg"},
@@ -62,11 +70,13 @@
 			{"year":"2016", "type": "B", "city": "Rio de Janeiro", "event": "Olympic Games", "category":"-66kg"}
 	  ]
 	},
-	"ryoko-tani": {
+	{
+		"id": "ryoko-tani",
 		"name": "Ryoko Tani",
 		"country": "JAP",
 		"birthday": "1975-09-06",
 		"image": "ryoko-tani.jpg",
+		"link": "https://en.wikipedia.org/wiki/Ryoko_Tani",
 		"medals": [
 			{"year":"1991", "type": "B", "city": "Barcelona", "event": "World Championships", "category":"-48kg"},
 			{"year":"1991", "type": "B", "city": "Osaka", "event": "Asian Championships", "category":"-48kg"},
@@ -86,11 +96,13 @@
 			{"year":"2008", "type": "B", "city": "Beijing", "event": "Olympic Games", "category":"-48kg"}
 	  ]
 	},
-	"teddy-riner": {
+	{
+		"id": "teddy-riner",
 		"name": "Teddy Riner",
 		"country": "FRA",
 		"birthday": "1989-04-07",
 		"image": "teddy-riner.jpg",
+		"link": "https://en.wikipedia.org/wiki/Teddy_Riner",
 		"medals": [
 			{"year":"2007", "type": "G", "city": "Belgrade", "event": "European Championships", "category":"+100kg"},
 			{"year":"2007", "type": "G", "city": "Rio de Janeiro", "event": "World Championships", "category":"+100kg"},
@@ -112,4 +124,4 @@
 			{"year":"2016", "type": "G", "city": "Rio de Janeiro", "event": "Olympic Games", "category":"+100kg"}
 	  ]
 	}
-}
+];

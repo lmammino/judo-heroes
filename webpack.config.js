@@ -11,7 +11,7 @@ const uglifyJsPlugin = new webpack.optimize.UglifyJsPlugin({
 });
 
 module.exports = {
-	entry: path.join(__dirname, "src", "main.js"),
+	entry: path.join(__dirname, "src", "app.js"),
 	output: {
 		path: path.join(__dirname, "app"),
 		filename: "bundle.js"

@@ -26,12 +26,6 @@ const data = {
 };
 
 class CountryFlag extends React.Component {
-	getDefaultProps() {
-	    return {
-	      "showName": true
-	    };
-	}
-	
 	render() {
 		return (
 			<span className="countryFlag">

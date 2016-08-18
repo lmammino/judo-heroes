@@ -6,7 +6,7 @@ class Medal extends React.Component {
 	render() {
 		return (
 			<div className="medal">
-				{this.props.place}
+				{this.props.year} {this.props.city} ({this.props.event})
 			</div>
 		)
 	}
