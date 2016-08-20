@@ -25,15 +25,15 @@ const data = {
 	}
 };
 
-class CountryFlag extends React.Component {
+class Flag extends React.Component {
 	render() {
 		return (
-			<span className="countryFlag">
-				<span className="flag">{data[this.props.code].emoji}</span>
+			<span className="flag">
+				<span className="emoji">{data[this.props.code].emoji}</span>
 				{this.props.showName && <span className="name">{data[this.props.code].name}</span>}
 			</span>
 		);
 	}
 }
 
-module.exports = CountryFlag;
+module.exports = Flag;
