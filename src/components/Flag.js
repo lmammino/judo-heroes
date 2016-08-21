@@ -30,7 +30,7 @@ class Flag extends React.Component {
 		return (
 			<span className="flag">
 				<span className="emoji">{data[this.props.code].emoji}</span>
-				{this.props.showName && <span className="name">{data[this.props.code].name}</span>}
+				{this.props.showName && <span className="name"> {data[this.props.code].name}</span>}
 			</span>
 		);
 	}

@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
 		return (
       <Layout>
   			<div className="home">
-  				<div className="athleteSelector">
+  				<div className="athletes-selector">
   					{this.athletes.map(athleteData => <AthletePreview key={athleteData.id} {...athleteData} />)}
   				</div>
   			</div>

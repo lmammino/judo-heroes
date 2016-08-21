@@ -1,0 +1,179 @@
+/*! CSS reset from benfrain/app-reset */
+*,:after,:before{box-sizing:inherit}html{box-sizing:border-box}
+*{user-select:none;-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}
+[contenteditable],input[type]{user-select:text}body,h1,h2,h3,h4,h5,h6,p{margin:0;font-size:1rem;font-weight:400}
+a{text-decoration:none;color:inherit}b{font-weight:400}em,i{font-style:normal}a:focus,input:focus{outline:0}
+fieldset,input{appearance:none;border:0;padding:0;margin:0;min-width:0;font-size:1rem;font-family:inherit}
+input::-ms-clear{display:none}input[type=number]{-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{appearance:none}
+svg{display:inline-flex}img{max-width:100%;display:block}
+
+html {
+  color: #030303;
+  font: caption;
+}
+
+a {
+  color: #1f4ba0;
+  text-decoration: underline;
+}
+
+header {
+  padding: 2em;
+}
+
+header .logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+footer {
+  margin: 4em auto;
+  padding: 2em;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+footer p {
+  line-height: 1.2em;
+  margin: 0 0 1em 0;
+}
+
+.home .athletes-selector {
+  clear: both;
+  padding: 2em;
+  text-align: center;
+}
+
+.home .athletes-selector .athlete-preview {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  display: inline-block;
+  margin: 0 1em 1em 0;
+  max-width: 200px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.home .athletes-selector .athlete-preview img {
+  margin: 0;
+  width: 100%;
+}
+
+.home .athletes-selector .athlete-preview .name {
+  color: #030303;
+  display: inline-block;
+  font-size: 1.6em;
+  overflow: hidden;
+  padding: .2em;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.home .athletes-selector .athlete-preview .medals-count {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  font-weight: bold;
+  margin: .2em;
+  padding: .2em .4em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+}
+
+.athlete {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.athlete header {
+  background: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.athlete .picture-container {
+  margin: -160px 0 0 0;
+}
+
+.athlete .picture-container img {
+  border-radius: 4px;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  display: inline;
+  margin: 0 0 0 2em;
+  width: 200px;
+}
+
+.athlete .picture-container h2 {
+  display: inline;
+  font-size: 3em;
+  padding: 0 0 0 .5em;
+  width: auto;
+}
+
+.athlete .description,
+.athlete .medals {
+  font-size: 1.6em;
+  padding: 1em;
+}
+
+.athlete .medals p {
+  font-size: 1em;
+}
+
+.athlete .medals li {
+  list-style: none;
+}
+
+.athlete .medals .symbol {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: .8em;
+  height: 1.6em;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  width: 1.6em;
+}
+
+.athlete .medals .symbol.symbol-G {
+  color: #daa520;
+  background-color: #fff6de;
+  border: 2px solid #daa520;
+}
+
+.athlete .medals .symbol.symbol-S {
+  color: #383738;
+  background-color: #b9b5b5;
+  border: 2px solid #383738;
+}
+
+.athlete .medals .symbol.symbol-B {
+  color: #6b1919;
+  background-color: #ea96a1;
+  border: 2px solid #6E1924;
+}
+
+.navigateBack {
+  font-size: 1.6em;
+  padding: 2em;
+  text-align: center;
+  text-decoration: none;
+}

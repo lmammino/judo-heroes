@@ -6,12 +6,13 @@ const Link = require('react-router').Link;
 class AthletePreview extends React.Component {
 	render() {
 		return (
-			<div className="athlete-preview">
-        <Link to={`/athlete/${this.props.id}`}>
-				  <h1 className="name">{this.props.name}</h1>
+      <Link to={`/athlete/${this.props.id}`}>
+        <div className="athlete-preview">
 				  <img src={`img/${this.props.image}`}/>
-        </Link>
-			</div>
+          <h2 className="name">{this.props.name}</h2>
+          <span className="medals-count">🏅 {this.props.medals.length}</span>
+			  </div>
+      </Link>
 		);
 	}
 }
