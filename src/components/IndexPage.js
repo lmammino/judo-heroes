@@ -7,7 +7,7 @@ const athletes = require('./../../app/athletes');
 
 class IndexPage extends React.Component {
 	constructor(props) {
-		super();
+		super(props);
 		this.athletes = athletes;
 	}
 	render() {
