@@ -4,9 +4,8 @@ const React = require('react');
 const ReactRouter = require('react-router');
 const Router = ReactRouter.Router;
 const Route = ReactRouter.Route;
-const IndexRoute = ReactRouter.IndexRoute;
 const browserHistory = ReactRouter.browserHistory;
-const IndexPage = require('./IndexPage.js');
+const IndexPage = require('./IndexPage');
 const AthletePage = require('./AthletePage');
 const NotFoundPage = require('./NotFoundPage');
 

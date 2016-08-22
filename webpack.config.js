@@ -10,14 +10,15 @@ const definePlugin = new webpack.DefinePlugin({
 
 module.exports = {
   devtool: debug ? 'inline-sourcemap' : null,
-  entry: path.join(__dirname, 'src', 'app.js'),
+  entry: path.join(__dirname, 'src', 'app-client.js'),
   devServer: {
     inline: true,
     port: 3333,
-    contentBase: "app/"
+    contentBase: "src/static/"
   },
   output: {
-    path: path.join(__dirname, 'app'),
+    path: path.join(__dirname, 'src', 'static', 'js'),
+    publicPath: "/js/",
     filename: 'bundle.js'
   },
   module: {

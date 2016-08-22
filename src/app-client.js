@@ -5,5 +5,5 @@ const ReactDOM = require('react-dom');
 const AppRoutes = require('./components/AppRoutes');
 
 window.onload = () => {
-	ReactDOM.render( <AppRoutes/> , document.getElementById('main'))
+  ReactDOM.render( <AppRoutes/> , document.getElementById('main'))
 };

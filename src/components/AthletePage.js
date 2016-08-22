@@ -7,7 +7,7 @@ const NotFoundPage = require('./NotFoundPage');
 const Layout = require('./Layout');
 const Medal = require('./Medal');
 const Flag = require('./Flag');
-const athletes = require('./../../app/athletes');
+const athletes = require('./../data/athletes');
 
 class AthletePage extends React.Component {
   render() {
