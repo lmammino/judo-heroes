@@ -27,10 +27,11 @@ const data = {
 
 class Flag extends React.Component {
 	render() {
+    const name = data[this.props.code].name;
 		return (
 			<span className="flag">
-				<span className="emoji">{data[this.props.code].emoji}</span>
-				{this.props.showName && <span className="name"> {data[this.props.code].name}</span>}
+				<span className="emoji" title={name}>{data[this.props.code].emoji}</span>
+				{this.props.showName && <span className="name"> {name}</span>}
 			</span>
 		);
 	}
