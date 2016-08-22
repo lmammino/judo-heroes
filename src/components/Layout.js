@@ -19,13 +19,13 @@ class Layout extends React.Component {
           </p>
 
           <p>
-            If you want to know more about Universal JavaScript have a look at the book <a href="https://nodejsdesignpatterns.com">Node.js Design Patterns</a>.
+            Do you want to know more about Node.js and Universal JavaScript? <strong>Checkout <a href="https://nodejsdesignpatterns.com">Node.js Design Patterns</a></strong>.
           </p>
-          
+
           <p>
             Built with <strong>❤</strong>︎ and <strong>code</strong> by <a href="http://loige.co" target="_blank">loige</a>.
-            Contribute to the code on <a href="https://github.com/lmammino/judo-heroes">GitHub</a> or 
-            read the make of article on <a href="http://scotch.io">Scotch.io</a>
+            Contribute on <a href="https://github.com/lmammino/judo-heroes">GitHub</a> or
+            read the "making of" on <a href="http://scotch.io">Scotch.io</a> (COMING SOON!)
           </p>
         </footer>
       </div>
