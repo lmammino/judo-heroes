@@ -1,13 +1,13 @@
 {
   "name": "judo-heroes",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "Simple application to showcase how to achieve universal rendering and routing with React and Express.",
+  "main": "src/server.js",
   "repository": "git@github.com:lmammino/judo-heroes.git",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress --inline --hot",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src"
+    "start": "NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js",
+    "start-dev": "node_modules/.bin/webpack-dev-server --progress --inline --hot",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p"
   },
   "author": "Luciano Mammino",
   "license": "MIT",

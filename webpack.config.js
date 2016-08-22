@@ -4,9 +4,6 @@ const debug = process.env.NODE_ENV !== "production";
 
 const webpack = require('webpack');
 const path = require('path');
-const definePlugin = new webpack.DefinePlugin({
-  "__BROWSER__": "true"
-});
 
 module.exports = {
   devtool: debug ? 'inline-sourcemap' : null,
@@ -27,17 +24,19 @@ module.exports = {
       loader: ['babel-loader'],
       query: {
         cacheDirectory: 'babel_cache',
-        presets: ['react', 'es2015', 'react-hmre'],
-        plugins: ['react-html-attrs']
+        presets: debug ? ['react', 'es2015', 'react-hmre'] : ['react', 'es2015']
       }
     }]
   },
-  plugins: debug ? [definePlugin] : [
-    definePlugin,
+  plugins: debug ? [] : [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+    }),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
-      mangle: false,
+      compress: { warnings: false },
+      mangle: true,
       sourcemap: false,
       beautify: false,
       dead_code: true

@@ -44,7 +44,7 @@ class AthletePage extends React.Component {
             }</ul>
           </section>
         </div>
-        <div class="navigateBack">
+        <div className="navigateBack">
           <Link to="/">« Back to the index</Link>
         </div>
       </Layout>
