@@ -9,7 +9,7 @@ const routes = require('./../routes');
 class AppRoutes extends React.Component {
   render() {
     return (
-      <Router history={browserHistory} routes={routes}/>
+      <Router history={browserHistory} routes={routes} onUpdate={() => window.scrollTo(0, 0)}/>
     );
   }
 }
