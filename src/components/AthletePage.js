@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 import NotFoundPage from './NotFoundPage';
 import Layout from './Layout';
 import Medal from './Medal';
@@ -13,9 +13,9 @@ export default class AthletePage extends React.Component {
     const id = this.props.params.id;
     const athlete = athletes.filter((athlete) => athlete.id === id)[0];
     if (!athlete) {
-      return <NotFoundPage/>
+      return <NotFoundPage/>;
     }
-    const headerStyle = {backgroundImage:`url(/img/${athlete.cover})`};
+    const headerStyle = { backgroundImage: `url(/img/${athlete.cover})` };
     return (
       <Layout>
         <nav className="atheletes-menu">
@@ -23,7 +23,7 @@ export default class AthletePage extends React.Component {
             const status = menuAthlete.id === athlete.id ? 'active' : null;
             return <Link key={menuAthlete.id} to={`/athlete/${menuAthlete.id}`} className={status}>
               {menuAthlete.name}
-            </Link>
+            </Link>;
           })}
         </nav>
         <div className="athlete">
@@ -33,7 +33,7 @@ export default class AthletePage extends React.Component {
             <h2 className="name"><Flag code={athlete.country}/> {athlete.name} ({athlete.country})</h2>
           </div>
           <section className="description">
-            Olympic medalist from <strong><Flag code={athlete.country} showName="true"/></strong>,  
+            Olympic medalist from <strong><Flag code={athlete.country} showName="true"/></strong>,
             born in {athlete.birth} (Find out more on <a href={athlete.link} target="_blank">Wikipedia</a>).
           </section>
           <section className="medals">

@@ -1,28 +1,28 @@
-"use strict";
+'use strict';
 
 import React from 'react';
 
 const data = {
-  "CUB": {
-    "name": "Cuba",
-    "emoji": "🇨🇺"
+  'CUB': {
+    'name': 'Cuba',
+    'emoji': '🇨🇺',
   },
-  "FRA": {
-    "name": "France",
-    "emoji": "🇫🇷"
+  'FRA': {
+    'name': 'France',
+    'emoji': '🇫🇷',
   },
-  "JAP": {
-    "name": "Japan",
-    "emoji": "🇯🇵"
+  'JAP': {
+    'name': 'Japan',
+    'emoji': '🇯🇵',
   },
-  "NED": {
-    "name": "Netherlands",
-    "emoji": "🇳🇱"
+  'NED': {
+    'name': 'Netherlands',
+    'emoji': '🇳🇱',
   },
-  "UZB": {
-    "name": "Uzbekistan",
-    "emoji": "🇺🇿"
-  }
+  'UZB': {
+    'name': 'Uzbekistan',
+    'emoji': '🇺🇿',
+  },
 };
 
 export default class Flag extends React.Component {

@@ -11,7 +11,13 @@ module.exports = {
   devServer: {
     inline: true,
     port: 3333,
-    contentBase: "src/static/"
+    contentBase: "src/static/",
+    proxy: {
+      '/': {
+        target: 'http://localhost:3000',
+        secure: false
+      }
+    }
   },
   output: {
     path: path.join(__dirname, 'src', 'static', 'js'),

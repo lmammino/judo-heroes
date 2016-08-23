@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 import Layout from './Layout';
 
 export default class NotFoundPage extends React.Component {

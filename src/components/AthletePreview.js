@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 export default class AthletePreview extends React.Component {
   render() {
