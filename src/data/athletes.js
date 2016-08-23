@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = [
+const athletes = [
 	{
 		"id": "driulis-gonzalez",
 		"name": "Driulis González",
@@ -130,3 +130,5 @@ module.exports = [
 	  ]
 	}
 ];
+
+export default athletes;

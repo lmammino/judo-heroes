@@ -1,10 +1,10 @@
 "use strict";
 
-const React = require('react');
-const Link = require('react-router').Link;
-const Layout = require('./Layout');
+import React from 'react';
+import {Link} from 'react-router';
+import Layout from './Layout';
 
-class NotFoundPage extends React.Component {
+export default class NotFoundPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -19,5 +19,3 @@ class NotFoundPage extends React.Component {
     );
   }
 }
-
-module.exports = NotFoundPage;

@@ -1,6 +1,6 @@
 "use strict";
 
-const React = require('react');
+import React from 'react';
 
 const data = {
 	"CUB": {
@@ -25,7 +25,7 @@ const data = {
 	}
 };
 
-class Flag extends React.Component {
+export default class Flag extends React.Component {
 	render() {
     const name = data[this.props.code].name;
 		return (
@@ -36,5 +36,3 @@ class Flag extends React.Component {
 		);
 	}
 }
-
-module.exports = Flag;

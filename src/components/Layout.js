@@ -1,9 +1,9 @@
 "use strict";
 
-const React = require('react');
-const Link = require('react-router').Link;
+import React from 'react';
+import {Link} from 'react-router';
 
-class Layout extends React.Component {
+export default class Layout extends React.Component {
   render() {
     return (
       <div className="app-container">
@@ -32,5 +32,3 @@ class Layout extends React.Component {
     );
   }
 }
-
-module.exports = Layout;

@@ -1,15 +1,14 @@
 "use strict";
 
-const React = require('react');
-const ReactRouter = require('react-router');
-const Link = ReactRouter.Link;
-const NotFoundPage = require('./NotFoundPage');
-const Layout = require('./Layout');
-const Medal = require('./Medal');
-const Flag = require('./Flag');
-const athletes = require('./../data/athletes');
+import React from 'react';
+import {Link} from 'react-router';
+import NotFoundPage from './NotFoundPage';
+import Layout from './Layout';
+import Medal from './Medal';
+import Flag from './Flag';
+import athletes from '../data/athletes';
 
-class AthletePage extends React.Component {
+export default class AthletePage extends React.Component {
   render() {
     const id = this.props.params.id;
     const athlete = athletes.filter((athlete) => athlete.id === id)[0];
@@ -51,5 +50,3 @@ class AthletePage extends React.Component {
     );
   }
 }
-
-module.exports = AthletePage;

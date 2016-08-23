@@ -1,6 +1,6 @@
 "use strict";
 
-const React = require('react');
+import React from 'react';
 
 const typeMap = {
   "G": "Gold",
@@ -8,7 +8,7 @@ const typeMap = {
   "B": "Bronze"
 }
 
-class Medal extends React.Component {
+export default class Medal extends React.Component {
 	render() {
 		return (
 			<li className="medal">
@@ -21,5 +21,3 @@ class Medal extends React.Component {
 		)
 	}
 }
-
-module.exports = Medal;

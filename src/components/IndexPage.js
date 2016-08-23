@@ -1,11 +1,11 @@
 "use strict";
 
-const React = require('react');
-const Layout = require('./Layout');
-const AthletePreview = require('./AthletePreview');
-const athletes = require('./../data/athletes');
+import React from 'react';
+import Layout from './Layout';
+import AthletePreview from './AthletePreview';
+import athletes from '../data/athletes';
 
-class IndexPage extends React.Component {
+export default class IndexPage extends React.Component {
 	render() {
 		return (
       <Layout>
@@ -18,5 +18,3 @@ class IndexPage extends React.Component {
 		);
 	}
 }
-
-module.exports = IndexPage;

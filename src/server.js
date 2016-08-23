@@ -1,22 +1,22 @@
 "use strict";
 
-const path = require('path');
-const http = require('http');
-const Express = require('express');
-const React = require('react');
-const ReactDom = require('react-dom/server');
-const Router = require('react-router');
-const routes = require('./routes');
-const NotFoundPage = require('./components/NotFoundPage');
+import path from 'path';
+import {Server} from 'http';
+import Express from 'express';
+import React from 'react';
+import {renderToString} from 'react-dom/server';
+import {match, RouterContext} from 'react-router';
+import routes from './routes';
+import NotFoundPage from './components/NotFoundPage';
 
 const app = new Express();
-const server = new http.Server(app);
+const server = new Server(app);
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(Express.static(path.join(__dirname, 'static')));
 app.get('*', (req, res) => {
-  Router.match(
+  match(
     {routes, location: req.url},
     (err, redirectLocation, renderProps) => {
       if (err) {
@@ -29,9 +29,9 @@ app.get('*', (req, res) => {
 
       let markup;
       if (renderProps) {
-        markup = ReactDom.renderToString(<Router.RouterContext {...renderProps}/>);
+        markup = renderToString(<RouterContext {...renderProps}/>);
       } else {
-        markup = ReactDom.renderToString(<NotFoundPage/>);
+        markup = renderToString(<NotFoundPage/>);
         res.status(404);
       }
 
@@ -41,12 +41,10 @@ app.get('*', (req, res) => {
 })
 
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || 'localhost';
-const protocol = process.env.PROTOCOL || 'http';
 const env = process.env.NODE_ENV || 'production';
 server.listen(port, err => {
   if (err) {
     return console.error(err);
   }
-  console.info(`Server running on ${protocol}://${host}${port != 80 ? ":"+port : ""} [${env}]`);
+  console.info(`Server running on http://localhost${port != 80 ? ":"+port : ""} [${env}]`);
 });

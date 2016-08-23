@@ -1,8 +1,8 @@
 "use strict";
 
-const IndexPage = require('./components/IndexPage');
-const AthletePage = require('./components/AthletePage');
-const NotFoundPage = require('./components/NotFoundPage');
+import IndexPage from './components/IndexPage';
+import AthletePage from './components/AthletePage';
+import NotFoundPage from './components/NotFoundPage';
 
 const routes = [
   {path: '/', component: IndexPage},
@@ -10,4 +10,4 @@ const routes = [
   {path: '*', component: NotFoundPage}
 ];
 
-module.exports = routes;
+export default routes;
