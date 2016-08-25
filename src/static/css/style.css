@@ -165,6 +165,12 @@ nav.atheletes-menu a.active {
   width: auto;
 }
 
+.athlete .flag .icon {
+  display: inline-block;
+  padding-bottom: .1em;
+  width: auto;
+}
+
 .athlete .description,
 .athlete .medals {
   font-size: 1.6em;

@@ -4,7 +4,7 @@ const athletes = [
   {
     'id': 'driulis-gonzalez',
     'name': 'Driulis González',
-    'country': 'CUB',
+    'country': 'cu',
     'birth': '1973',
     'image': 'driulis-gonzalez.jpg',
     'cover': 'driulis-gonzalez-cover.jpg',
@@ -31,7 +31,7 @@ const athletes = [
   {
     'id': 'mark-huizinga',
     'name': 'Mark Huizinga',
-    'country': 'NED',
+    'country': 'nl',
     'birth': '1973',
     'image': 'mark-huizinga.jpg',
     'cover': 'mark-huizinga-cover.jpg',
@@ -58,7 +58,7 @@ const athletes = [
   {
     'id': 'rishod-sobirov',
     'name': 'Rishod Sobirov',
-    'country': 'UZB',
+    'country': 'uz',
     'birth': '1986',
     'image': 'rishod-sobirov.jpg',
     'cover': 'rishod-sobirov-cover.jpg',
@@ -76,7 +76,7 @@ const athletes = [
   {
     'id': 'ryoko-tani',
     'name': 'Ryoko Tani',
-    'country': 'JAP',
+    'country': 'jp',
     'birth': '1975',
     'image': 'ryoko-tani.jpg',
     'cover': 'ryoko-tani-cover.jpg',
@@ -103,7 +103,7 @@ const athletes = [
   {
     'id': 'teddy-riner',
     'name': 'Teddy Riner',
-    'country': 'FRA',
+    'country': 'fr',
     'birth': '1989',
     'image': 'teddy-riner.jpg',
     'cover': 'teddy-riner-cover.jpg',

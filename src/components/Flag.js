@@ -3,34 +3,35 @@
 import React from 'react';
 
 const data = {
-  'CUB': {
+  'cu': {
     'name': 'Cuba',
-    'emoji': '🇨🇺',
+    'icon': 'flag-cu.png',
   },
-  'FRA': {
+  'fr': {
     'name': 'France',
-    'emoji': '🇫🇷',
+    'icon': 'flag-fr.png',
   },
-  'JAP': {
+  'jp': {
     'name': 'Japan',
-    'emoji': '🇯🇵',
+    'icon': 'flag-jp.png',
   },
-  'NED': {
+  'nl': {
     'name': 'Netherlands',
-    'emoji': '🇳🇱',
+    'icon': 'flag-nl.png',
   },
-  'UZB': {
+  'uz': {
     'name': 'Uzbekistan',
-    'emoji': '🇺🇿',
+    'icon': 'flag-uz.png',
   },
 };
 
 export default class Flag extends React.Component {
   render() {
     const name = data[this.props.code].name;
+    const icon = data[this.props.code].icon;
     return (
       <span className="flag">
-        <span className="emoji" title={name}>{data[this.props.code].emoji}</span>
+        <img className="icon" title={name} src={`/img/${icon}`}/>
         {this.props.showName && <span className="name"> {name}</span>}
       </span>
     );

@@ -30,7 +30,7 @@ export default class AthletePage extends React.Component {
           <header style={headerStyle}/>
           <div className="picture-container">
             <img src={`/img/${athlete.image}`}/>
-            <h2 className="name"><Flag code={athlete.country}/> {athlete.name} ({athlete.country})</h2>
+            <h2 className="name">{athlete.name}</h2>
           </div>
           <section className="description">
             Olympic medalist from <strong><Flag code={athlete.country} showName="true"/></strong>,
