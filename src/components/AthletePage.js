@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import NotFoundPage from './NotFoundPage';
 import Layout from './Layout';
+import AthletesMenu from './AthletesMenu';
 import Medal from './Medal';
 import Flag from './Flag';
 import athletes from '../data/athletes';
@@ -18,14 +19,7 @@ export default class AthletePage extends React.Component {
     const headerStyle = { backgroundImage: `url(/img/${athlete.cover})` };
     return (
       <Layout>
-        <nav className="atheletes-menu">
-          {athletes.map(menuAthlete => {
-            const status = menuAthlete.id === athlete.id ? 'active' : null;
-            return <Link key={menuAthlete.id} to={`/athlete/${menuAthlete.id}`} className={status}>
-              {menuAthlete.name}
-            </Link>;
-          })}
-        </nav>
+        <AthletesMenu selected={athlete.id}/>
         <div className="athlete">
           <header style={headerStyle}/>
           <div className="picture-container">
