@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const athletes = [
   {
@@ -128,7 +128,7 @@ const athletes = [
       { 'year': '2016', 'type': 'G', 'city': 'Kazan', 'event': 'European Championships', 'category': '+100kg' },
       { 'year': '2016', 'type': 'G', 'city': 'Rio de Janeiro', 'event': 'Olympic Games', 'category': '+100kg' },
     ],
-  },
+  }
 ];
 
 export default athletes;

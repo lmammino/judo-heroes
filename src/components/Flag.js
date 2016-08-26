@@ -22,7 +22,7 @@ const data = {
   'uz': {
     'name': 'Uzbekistan',
     'icon': 'flag-uz.png',
-  },
+  }
 };
 
 export default class Flag extends React.Component {
