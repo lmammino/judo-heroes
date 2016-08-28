@@ -12,12 +12,7 @@ module.exports = {
     inline: true,
     port: 3333,
     contentBase: "src/static/",
-    proxy: {
-      '/': {
-        target: 'http://localhost:3000',
-        secure: false
-      }
-    }
+    historyApiFallback: true
   },
   output: {
     path: path.join(__dirname, 'src', 'static', 'js'),
