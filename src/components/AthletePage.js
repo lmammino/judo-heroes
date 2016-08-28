@@ -3,7 +3,6 @@
 import React from 'react';
 import { Link } from 'react-router';
 import NotFoundPage from './NotFoundPage';
-import Layout from './Layout';
 import AthletesMenu from './AthletesMenu';
 import Medal from './Medal';
 import Flag from './Flag';
@@ -18,7 +17,7 @@ export default class AthletePage extends React.Component {
     }
     const headerStyle = { backgroundImage: `url(/img/${athlete.cover})` };
     return (
-      <Layout>
+      <div>
         <AthletesMenu selected={athlete.id}/>
         <div className="athlete">
           <header style={headerStyle}/>
@@ -40,7 +39,7 @@ export default class AthletePage extends React.Component {
         <div className="navigateBack">
           <Link to="/">« Back to the index</Link>
         </div>
-      </Layout>
+      </div>
     );
   }
 }
