@@ -18,7 +18,7 @@ export default class AthletePage extends React.Component {
     const headerStyle = { backgroundImage: `url(/img/${athlete.cover})` };
     return (
       <div className="athlete-full">
-        <AthletesMenu selected={athlete.id}/>
+        <AthletesMenu/>
         <div className="athlete">
           <header style={headerStyle}/>
           <div className="picture-container">
