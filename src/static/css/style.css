@@ -11,6 +11,7 @@ svg{display:inline-flex}img{max-width:100%;display:block}
 html {
   color: #030303;
   font: caption;
+  padding-bottom: 2em;
 }
 
 a {
@@ -219,4 +220,27 @@ nav.atheletes-menu a.active {
   padding: 2em;
   text-align: center;
   text-decoration: none;
+}
+
+#abar {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#abar a {
+  background: #ffa500;
+  color: #000;
+  display: block;
+  font-weight: bold;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+#abar a:hover {
+  text-decoration: underline;
 }
