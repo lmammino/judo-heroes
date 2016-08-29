@@ -25,7 +25,7 @@ export default class Layout extends React.Component {
           <p>
             Built with <strong>❤</strong>︎ and <strong>code</strong> by <a href="http://loige.co" target="_blank">loige</a>.
             Contribute on <a href="https://github.com/lmammino/judo-heroes">GitHub</a> or
-            read the "making of" on <a href="http://scotch.io">Scotch.io</a> (COMING SOON!)
+            read the tutorial on <a href="https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app">Scotch.io</a>
           </p>
         </footer>
       </div>
