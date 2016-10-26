@@ -12,7 +12,9 @@ module.exports = {
     inline: true,
     port: 3333,
     contentBase: "src/static/",
-    historyApiFallback: true
+    historyApiFallback: {
+      index: '/index-static.html'
+    }
   },
   output: {
     path: path.join(__dirname, 'src', 'static', 'js'),
