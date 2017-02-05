@@ -110,7 +110,7 @@ footer p {
   vertical-align: middle;
 }
 
-nav.atheletes-menu {
+nav.athletes-menu {
   margin: 0 auto;
   max-width: 800px;
   padding: 2em;
@@ -118,12 +118,12 @@ nav.atheletes-menu {
   width: 100%;
 }
 
-nav.atheletes-menu a {
+nav.athletes-menu a {
   font-size: 1.6em;
   margin: 0 1em 1em 0;
 }
 
-nav.atheletes-menu a.active {
+nav.athletes-menu a.active {
   color: #030303;
   text-decoration: none;
 }

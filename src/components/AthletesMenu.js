@@ -7,7 +7,7 @@ import athletes from '../data/athletes';
 export default class AthletesMenu extends React.Component {
   render() {
     return (
-      <nav className="atheletes-menu">
+      <nav className="athletes-menu">
         {athletes.map(menuAthlete => {
           return <Link key={menuAthlete.id} to={`/athlete/${menuAthlete.id}`} activeClassName="active">
             {menuAthlete.name}
