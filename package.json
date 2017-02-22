@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "repository": "git@github.com:lmammino/judo-heroes.git",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js",
+    "start": "cross-env NODE_ENV=production node_modules/.bin/babel-node --presets react,es2015 src/server.js",
     "start-dev": "npm run start-dev-hmr",
     "start-dev-single-page": "node_modules/.bin/http-server src/static",
     "start-dev-hmr": "node_modules/.bin/webpack-dev-server --progress --inline --hot --open",
