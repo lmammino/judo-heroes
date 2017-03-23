@@ -1,6 +1,18 @@
 # judo-heroes
 A simple application built to showcase Universal JavaScript with Node.js and React.
 
+## 😱 NEW VERSION AVAILABLE
+
+A new version of the codebase is available in a new dedicated repository: https://github.com/lmammino/judo-heroes-2
+
+The new version includes the following changes and improvements:
+
+  - Updated to `Webpack 2`, `React 15.4`, `React Router 4` and `Express 5`
+  - Using pure components where possible
+  - Better structure of componenents
+  - Top down data passing
+
+
 ## The tutorial
 This application was created to support a "Universal Javascript" (aka Isomorphic) tutorial published on [Scotch.io](https://scotch.io):
 
