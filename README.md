@@ -3,7 +3,7 @@ A simple application built to showcase Universal JavaScript with Node.js and Rea
 
 ## 😱 NEW VERSION AVAILABLE
 
-A new version of the codebase is available in a new dedicated repository: https://github.com/lmammino/judo-heroes-2
+A new version of the codebase is available in a dedicated repository: https://github.com/lmammino/judo-heroes-2
 
 The new version includes the following changes and improvements:
 
@@ -11,6 +11,8 @@ The new version includes the following changes and improvements:
   - Using pure components where possible
   - Better structure of componenents
   - Top down data passing
+  
+Be sure to ⬇️ **checkout** and ⭐️ **star** the [new repository](https://github.com/lmammino/judo-heroes-2) if you are interested in fresher code.
 
 
 ## The tutorial
